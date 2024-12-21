@@ -12,7 +12,7 @@ public class ConfigurationReader {
             properties = new Properties();
             properties.load(fileInputStream);
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Failed to load configuration file.", e);
         }
     }
 
