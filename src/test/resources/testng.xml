@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!-- UI Tests -->
+    <test verbose="2" parallel="false" name="Ebay Test">
+        <classes>
+            <class name="org.fis.tests.ui.EbayAddToCartTest">
+                <methods>
+                    <include name="testAddToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- API Tests -->
+    <test verbose="2" parallel="false" name="API Tests">
+        <classes>
+            <class name="org.fis.tests.api.CoinDeskAPI">
+                <methods>
+                    <include name="testStatusCode"/>
+                    <include name="testResponseContainsCurrencies"/>
+                    <include name="testGBPDescription"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

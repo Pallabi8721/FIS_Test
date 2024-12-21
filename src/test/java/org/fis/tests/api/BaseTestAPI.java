@@ -1,4 +1,4 @@
-package org.fis.tests;
+package org.fis.tests.api;
 
 import io.restassured.RestAssured;
 import org.fis.config.ConfigurationReader;

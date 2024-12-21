@@ -1,4 +1,4 @@
-package org.fis.tests;
+package org.fis.tests.ui;
 
 import org.fis.config.ConfigurationReader;
 import org.fis.driver.DriverOperation;
